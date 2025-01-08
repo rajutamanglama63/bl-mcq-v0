@@ -1,16 +1,15 @@
-// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAxVM4naMmgRfjGg3qW-_mk1jFKbrOjAEo",
-  authDomain: "bl-mcq-v1.firebaseapp.com",
-  projectId: "bl-mcq-v1",
-  storageBucket: "bl-mcq-v1.firebasestorage.app",
-  messagingSenderId: "595712370923",
-  appId: "1:595712370923:web:a5d09f5834c9f7d296b6ae",
-  measurementId: "G-SHBCMM8QLY"
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+  measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID
 };
 
 // Initialize Firebase
